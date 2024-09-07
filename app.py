@@ -22,7 +22,7 @@ logging.basicConfig(level=logging.INFO)
 # LINE bot 設置
 LINE_CHANNEL_ACCESS_TOKEN = 'OG/Z9nCIEAvPSMNHsdfcOXS3ulWyNQihSszijTJdXEfa7srZYeuTKpUkarrwf6TXcEOwjp/6EH+0l/aceCyrQWU9KUnRlFvdl47EFT8P+0GiMvKwa03TJbAy9c7sUk/Z8l50wjUNz5n/LOXtDAcK/QdB04t89/1O/w1cDnyilFU='
 LINE_CHANNEL_SECRET = 'f64b31faefee2d64598ff9c317f8ce43'
-SERVER_URL = 'your_server_url'
+SERVER_URL = 'https://linebot-smq6.onrender.com'
 STT_API_URL = 'http://180.218.16.187:30303/recognition_long_audio'
 TTS_API_URL = 'http://180.218.16.187:30303/getTTSfromText'
 LLM_API_URL = 'http://61.66.218.215:30315/llm_chat'
