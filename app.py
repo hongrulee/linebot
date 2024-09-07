@@ -134,8 +134,11 @@ def handle_audio_message(event):
             fd.write(chunk)
 
     text = get_text_from_audio(audio_path)
+    print(f'==> {text}')
     llm_response = get_response_from_llm(text)
+    print(f'===> {llm_response}')
     reply_audio_path = get_audio_from_text(llm_response)
+    print(f'====> {reply_audio_path}')
 
     if os.path.exists(reply_audio_path):
         line_bot_api.reply_message(
@@ -151,8 +154,11 @@ def handle_audio_message(event):
 @line_handler.add(MessageEvent, message=TextMessage)
 def handle_text_message(event):
     text = event.message.text
+    print(f'==> {text}')
     llm_response = get_response_from_llm(text)
+    print(f'===> {llm_response}')
     reply_audio_path = get_audio_from_text(llm_response)
+    print(f'====> {reply_audio_path}')
 
     if os.path.exists(reply_audio_path):
         line_bot_api.reply_message(
