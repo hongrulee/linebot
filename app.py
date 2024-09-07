@@ -26,7 +26,7 @@ SERVER_URL = 'https://linebot-smq6.onrender.com'
 STT_API_URL = 'http://180.218.16.187:30303/recognition_long_audio'
 TTS_API_URL = 'http://180.218.16.187:30303/getTTSfromText'
 LLM_API_URL = 'http://61.66.218.215:30315/llm_chat'
-SERVER_PORT = 10000
+SERVER_PORT = int(os.environ.get('PORT', 10000))#10000
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 line_handler = WebhookHandler(LINE_CHANNEL_SECRET)
