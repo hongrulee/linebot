@@ -20,8 +20,8 @@ app.secret_key = os.urandom(24)
 logging.basicConfig(level=logging.INFO)
 
 # LINE bot 設置
-LINE_CHANNEL_ACCESS_TOKEN = 'w4627SjiixmfjJ7LNg6U8o9L8Nh+NXgaN4ELtQ9FkxjO8oO0aVdT8L9J9eGT/qNM9IrLMzjcngjmCtPy+Qa70dxtU0e4e8F6NA6hwbIM3lppgmzwNMiC257n6Eq8eLt+buQ8lSfFFNQF1AJvRZGRIgdB04t89/1O/w1cDnyilFU='
-LINE_CHANNEL_SECRET = '1d982942ffefc23710b07c6abc050cb1'
+LINE_CHANNEL_ACCESS_TOKEN = 'OG/Z9nCIEAvPSMNHsdfcOXS3ulWyNQihSszijTJdXEfa7srZYeuTKpUkarrwf6TXcEOwjp/6EH+0l/aceCyrQWU9KUnRlFvdl47EFT8P+0GiMvKwa03TJbAy9c7sUk/Z8l50wjUNz5n/LOXtDAcK/QdB04t89/1O/w1cDnyilFU='
+LINE_CHANNEL_SECRET = 'f64b31faefee2d64598ff9c317f8ce43'
 SERVER_URL = 'your_server_url'
 STT_API_URL = 'http://180.218.16.187:30303/recognition_long_audio'
 TTS_API_URL = 'http://180.218.16.187:30303/getTTSfromText'
